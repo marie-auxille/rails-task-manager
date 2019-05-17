@@ -1,0 +1,6 @@
+<h1>My tasks</h1>
+<% @tasks.each do |task| %>
+<p>
+<%= task.completed ? <i class="far fa-check-square"></i> : <i class="far fa-square"></i>%>
+<%= task.name %>
+</p>
